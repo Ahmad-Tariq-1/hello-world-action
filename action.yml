@@ -1,0 +1,17 @@
+
+name: Hello World Action
+description: A simple greeting action
+
+inputs:
+  name:
+    description: Name of the person to greet
+    required: true
+    default: Student
+
+outputs:
+  greeting:
+    description: The greeting message
+
+runs:
+  using: node20
+  main: dist/index.js
